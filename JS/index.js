@@ -6,7 +6,7 @@ const newsletterNotification = document.querySelector('#notification');
 newsletterForm.addEventListener('submit', function(e){
     e.preventDefault();
 
-    const pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/g;
+    const pattern =  /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;
     const inputValue = newsletterInput.value.trim();
 
     if( pattern.test(inputValue) === false ) {
