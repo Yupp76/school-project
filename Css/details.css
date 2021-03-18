@@ -117,6 +117,25 @@
   margin-right: 1rem;
 }
 
+.amount-box div > * {
+  cursor: inherit;
+}
+
+.amount-box div:first-child,
+.amount-box div:last-child {
+  cursor: pointer;
+}
+
+.amount-box div:first-child:hover,
+.amount-box div:last-child:hover {
+    background-color: #00000015;
+}
+
+.amount-box div:first-child:focus-within,
+.amount-box div:last-child:focus-within {
+    background-color: #0000002d;
+}
+
 @media screen and (max-width: 915px) {
   .text-content-footer .amount-box div {
     padding: 1rem 1.5rem;

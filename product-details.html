@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Css/styles.css" />
     <link rel="stylesheet" href="Css/details.css" />
-    <title>My First Project</title>
+    <title>DETAILS | RAINYDAYS</title>
     <meta name="Description" content="This is the rainDays" />
     <!-- Hotjar Tracking Code for https://first-school-project-jim-ree.netlify.app -->
     <script>
@@ -36,15 +36,19 @@
             </a>
           </div>
           <div class="nav-meny">
-            <a href="index.html">Home</a>
-            <a href="om.html">About Us</a>
-            <a href="product.html">Product</a>
-            <a href="Contact.html">Contact Us</a>
+            <a href="/index.html">Home</a>
+            <a href="/om.html">About Us</a>
+            <a href="/product.html">Product</a>
+            <a href="/contact.html">Contact Us</a>
           </div>
           <div class="nav-thirdrow">
-            <a href="Sign-In.html"><img src="IMG/Vector1.png" alt="user" /></a>
-            <a href="Sign-up.html"><img src="IMG/Vector2.png" alt="cart" /></a>
-            <a href="Sign-up.html" class="btn -primary">Sign Up</a>
+            <a href="/sign-In.html"
+              ><img src="/IMG/Vector1.png" alt="user"
+            /></a>
+            <a href="/sign-up.html"
+              ><img src="/IMG/Vector2.png" alt="cart"
+            /></a>
+            <a href="/sign-up.html" class="btn -primary">Sign Up</a>
           </div>
           <div class="mobile-nav-btn" id="menuToggle">
             <input type="checkbox" />
@@ -52,12 +56,13 @@
             <span></span>
             <span></span>
             <ul id="menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="om.html">About Us</a></li>
-              <li><a href="product.html">Product</a></li>
-              <li><a href="Contact.html">Contact Us</a></li>
-              <li><a href="Sign-up.html">Sign Up</a></li>
-              <li><a href="Sign-In.html">Sign In</a></li>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/om.html">About Us</a></li>
+              <li><a href="/product.html">Product</a></li>
+              <li><a href="/contact.html">Contact Us</a></li>
+              <li><a href="/sign-up.html">Sign Up</a></li>
+              <li><a href="/sign-In.html">Sign In</a></li>
+              <li><a href="/cart.html">Cart</a></li>
             </ul>
           </div>
         </div>
@@ -78,7 +83,7 @@
         </div>
         <div class="text-content">
           <div class="text-content-header">
-            <h1 class="heading-smd">Product Name</h1>
+            <h1 class="heading-smd">Waterproof Jacket</h1>
             <ul>
               <li>
                 <img src="IMG/Icon_5.png" />
@@ -97,7 +102,7 @@
               </li>
             </ul>
           </div>
-          <h2 class="heading-smd">Product Category</h2>
+          <h2 class="heading-smd">Waterproof Category</h2>
           <span class="heading-smd">Natural Material</span>
           <span class="seperator"></span>
           <p class="paragraph">
@@ -105,17 +110,21 @@
             earum, aspernatur accusamus cupiditate aut ducimus eveniet, error
             veritatis at corrupti quisquam quam, facere natus facilis explicabo.
           </p>
-          <span class="price">$100.00</span>
+          <span class="price">$150.00</span>
           <div class="text-content-footer">
             <div class="amount-box">
-              <div>-</div>
-              <div class="amount-number">1</div>
-              <div>+</div>
+              <div id="minus">-</div>
+              <div id="amount" class="amount-number">1</div>
+              <div id="plus">+</div>
             </div>
-            <div class="btn -primary">
+            <a
+              href="cart.html?amount=1&unit-price=150.00"
+              id="add-to-cart"
+              class="btn -primary"
+            >
               <span>Add to cart</span>
               <img src="IMG/cart-white.png" />
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -194,5 +203,6 @@
       </div>
     </footer>
     <!-- --FOOTER ends here -->
+    <script src="JS/details.js"></script>
   </body>
 </html>

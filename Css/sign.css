@@ -86,6 +86,7 @@
   font-size: 17px;
   text-decoration: underline;
   font-weight: 500;
+  color: var(--paragraph);
 }
 
 @media screen and (max-width: 768px) {

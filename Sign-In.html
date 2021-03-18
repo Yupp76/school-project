@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="Css/styles.css" />
     <link rel="stylesheet" href="Css/contact.css" />
     <link rel="stylesheet" href="Css/sign.css" />
-    <title>My First Project</title>
+    <title>SIGN IN | RAINYDAYS</title>
     <meta name="Description" content="This is the rainDays" />
     <!-- Hotjar Tracking Code for https://first-school-project-jim-ree.netlify.app -->
     <script>
@@ -37,15 +37,19 @@
             </a>
           </div>
           <div class="nav-meny">
-            <a href="index.html">Home</a>
-            <a href="om.html">About Us</a>
-            <a href="product.html">Product</a>
-            <a href="Contact.html">Contact Us</a>
+            <a href="/index.html">Home</a>
+            <a href="/om.html">About Us</a>
+            <a href="/product.html">Product</a>
+            <a href="/contact.html">Contact Us</a>
           </div>
           <div class="nav-thirdrow">
-            <a href="Sign-In.html"><img src="IMG/Vector1.png" alt="user" /></a>
-            <a href="Sign-up.html"><img src="IMG/Vector2.png" alt="cart" /></a>
-            <a href="Sign-up.html" class="btn -primary">Sign Up</a>
+            <a href="/sign-In.html" class="active"
+              ><img src="/IMG/Vector1.png" alt="user"
+            /></a>
+            <a href="/sign-up.html"
+              ><img src="/IMG/Vector2.png" alt="cart"
+            /></a>
+            <a href="/sign-up.html" class="btn -primary">Sign Up</a>
           </div>
           <div class="mobile-nav-btn" id="menuToggle">
             <input type="checkbox" />
@@ -53,12 +57,13 @@
             <span></span>
             <span></span>
             <ul id="menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="om.html">About Us</a></li>
-              <li><a href="product.html">Product</a></li>
-              <li><a href="Contact.html">Contact Us</a></li>
-              <li><a href="Sign-up.html">Sign Up</a></li>
-              <li><a href="Sign-In.html">Sign In</a></li>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/om.html">About Us</a></li>
+              <li><a href="/product.html">Product</a></li>
+              <li><a href="/contact.html">Contact Us</a></li>
+              <li><a href="/sign-up.html">Sign Up</a></li>
+              <li><a href="/sign-In.html" class="active">Sign In</a></li>
+              <li><a href="/cart.html">Cart</a></li>
             </ul>
           </div>
         </div>
@@ -78,24 +83,39 @@
           </p>
         </div>
         <div class="form-contact">
-          <form action="" method="get" class="form">
+          <form id="sign-in" class="form">
             <div class="formlabel">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="email"
+              />
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" required />
+              <span id="note-email" class="notification"></span>
             </div>
             <div class="formlabel">
-              <label for="email">Password</label>
-              <input type="email" name="email" id="email" required />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                placeholder="password"
+              />
+              <label for="password">Password</label>
+              <span id="note-password" class="notification"></span>
             </div>
             <div class="form-footer">
               <label class="control control--checkbox"
                 >Remember me
-                <input type="checkbox" checked="checked" />
+                <input type="checkbox" />
                 <div class="control--indicator"></div>
               </label>
             </div>
+            <button type="submit" class="btn -primary">Sign In</button>
+            <span id="submit-results" class="notification"></span>
           </form>
-          <button class="btn -primary">Sign In</button>
         </div>
         <div class="contact-footer">
           <p>
@@ -179,5 +199,6 @@
       </div>
     </footer>
     <!-- --FOOTER ends here -->
+    <script src="JS/signIn.js"></script>
   </body>
 </html>

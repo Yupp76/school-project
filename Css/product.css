@@ -147,10 +147,44 @@
   row-gap: 1.5rem;
 }
 
+.products-wrapper a {
+  color: black;
+  margin-right: 10px;
+  height: fit-content;
+  text-decoration: none;
+  display: block;
+  padding: .5rem;
+  position: relative;
+}
+
+.products-wrapper a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transition: .2s all ease;
+}
+
+.products-wrapper a:hover::after {
+  background: #0000000c;
+}
+
 .product-card img {
   width: 100%;
   margin-bottom: 0.5rem;
 }
+
+.product-card .product-card-footer {
+  margin-top: 1rem;
+}
+
+.product-card .product-card-footer img {
+  margin: 0;
+}
+
 .product-card h1 {
   font-size: 14px;
   margin: 0;
@@ -167,7 +201,7 @@
   display: block;
   font-size: 20px;
   font-weight: 700;
-  color: #30e220;
+  color: var(--green);
 }
 .product-card .product-card-footer ul {
   display: flex;
@@ -206,8 +240,8 @@
 }
  
 .pagintation-wrapper ul li:nth-child(2) {
-  border: 1px solid #1a6ab4;
-  background-color: #2387e3;
+  border: 1px solid var(--darkBlue);
+  background-color: var(--blue);
   color: white;
 }
  
@@ -321,8 +355,8 @@
 
 /* When the checkbox is checked, add a blue background */
 .box-container input:checked ~ .checkmark {
-  background-color: #30e220;
-  border: 3px solid green;
+  background-color: var(--green);
+  border: 3px solid var(--darkGreen);
   margin: -3px 0 0 -3px;
   border-radius: 6px;
 }

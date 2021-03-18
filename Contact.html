@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="Css/styles.css" />
   <link rel="stylesheet" href="Css/contact.css" />
-  <title>My First Project</title>
+  <title>CONTACT | RAINYDAYS</title>
   <meta name="Description" content="This is the rainDays" />
 </head>
 
@@ -24,12 +24,12 @@
           <a href="index.html">Home</a>
           <a href="om.html">About Us</a>
           <a href="product.html">Product</a>
-          <a href="Contact.html">Contact Us</a>
+          <a href="contact.html" class="active">Contact Us</a>
         </div>
         <div class="nav-thirdrow">
-          <a href="Sign-In.html"><img src="IMG/Vector1.png" alt="user" /></a>
-          <a href="Sign-up.html"><img src="IMG/Vector2.png" alt="cart" /></a>
-          <a href="Sign-up.html" class="btn -primary">Sign Up</a>
+          <a href="sign-In.html"><img src="IMG/Vector1.png" alt="user" /></a>
+          <a href="sign-up.html"><img src="IMG/Vector2.png" alt="cart" /></a>
+          <a href="sign-up.html" class="btn -primary">Sign Up</a>
         </div>
         <div class="mobile-nav-btn" id="menuToggle">
           <input type="checkbox" />
@@ -40,9 +40,10 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="om.html">About Us</a></li>
             <li><a href="product.html">Product</a></li>
-            <li><a href="Contact.html">Contact Us</a></li>
-            <li><a href="Sign-up.html">Sign Up</a></li>
-            <li><a href="Sign-In.html">Sign In</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+            <li><a href="sign-up.html">Sign Up</a></li>
+            <li><a href="sign-In.html">Sign In</a></li>
+            <li><a href="cart.html">Cart</a></li>
           </ul>
         </div>
       </div>
@@ -61,21 +62,25 @@
           ipsum fugiat laboris minim nostrud dolor qui.
         </p>
         <div class="form-contact">
-          <form action="" method="get" class="form">
+          <form id="contact" class="form">
             <div class="formlabel">
+              <input type="text" id="name" required placeholder="name" />
               <label for="name">Name</label>
-              <input type="text" id="name" required />
+              <span id="note-name" class="notification"></span>
             </div>
             <div class="formlabel">
+              <input type="email" name="email" id="email" required placeholder="email" />
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" required />
+              <span id="note-email" class="notification"></span>
             </div>
             <div class="formlabel3">
-              <label for="Message">Message</label>
-              <textarea id="Message" name="Message" rows="4" cols="50"></textarea>
+              <textarea id="message" name="Message" rows="4" cols="50" placeholder="message"></textarea>
+              <label for="message">Message</label>
+              <span id="note-message" class="notification"></span>
             </div>
+          <button type="submit" class="btn -primary">Send</button>
+          <span id="submit-results" class="notification"></span>
           </form>
-          <button class="btn -primary">Send</button>
         </div>
       </div>
       <div class="top-contact-content-right">
@@ -180,6 +185,7 @@
     </div>
   </footer>
   <!-- --FOOTER ends here -->
+  <script src="JS/contact.js"></script>
 </body>
 
 </html>

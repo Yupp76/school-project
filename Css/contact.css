@@ -68,21 +68,21 @@
 }
 
 .formlabel input {
-  padding: 1rem 0.25rem;
+  padding: 1rem 1rem;
   border: 0;
   background: #d3d3d3;
-  width: 99%;
+  width: calc(100% - 2rem);
   margin-bottom: 1rem;
   border-radius: 4px;
 }
 
 .formlabel3 textarea {
   border-radius: 4px;
-  padding: 0.25rem;
+  padding: 1.25rem 1rem;
   border: 0;
   background: #d3d3d3;
   resize: none;
-  width: 99%;
+  width: calc(100% - 2rem);
   height: 230px;
 }
 .form-contact button {
@@ -100,6 +100,20 @@
   color: rgb(122, 122, 122);
   top: 14px;
   left: 20px;
+  background-color: transparent;
+  transition: .2s all ease;
+}
+
+.formlabel input::placeholder,
+.formlabel3 textarea::placeholder {
+  opacity: 0;
+}
+
+.formlabel input:not(:placeholder-shown) + label,
+.formlabel3 textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  background-color: white;
+  padding: 0 .5rem;
 }
 
 .formlabel3 {
@@ -111,6 +125,10 @@
   color: rgb(122, 122, 122);
   top: 14px;
   left: 20px;
+}
+
+#submit-results {
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
