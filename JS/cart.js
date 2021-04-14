@@ -1,9 +1,9 @@
 const productTotal = document.querySelector("#total");
 const productAmount = document.querySelector("#amount");
-const productAmountTxt = document.querySelector('#amount-text')
+const productAmountTxt = document.querySelector("#amount-text");
 const minusBtn = document.querySelector("#minus");
 const plusBtn = document.querySelector("#plus");
-const cartItemWrapper = document.querySelector('#cart-table-wrapper');
+const cartItemWrapper = document.querySelector("#cart-table-wrapper");
 
 const checkoutProducts = document.querySelector("#products-total");
 const checkoutDelivery = document.querySelector("#delivery-total");
@@ -30,14 +30,14 @@ function getQueryData() {
 
     return result;
   } else {
-    cartItemWrapper.innerHTML = '<p class="empty-cart">Empty cart, no products added yet</p>'
-    
+    cartItemWrapper.innerHTML =
+      '<p class="empty-cart">Empty cart, no products added yet</p>';
+
     pricesCalculator(0, 0, 0);
   }
 }
 
-
-document.addEventListener('DOMContentLoaded', () => getQueryData());
+document.addEventListener("DOMContentLoaded", () => getQueryData());
 
 minusBtn.addEventListener("click", function () {
   const currentAmount = parseInt(productAmount.innerHTML);
@@ -73,12 +73,11 @@ function pricesCalculator(currAmount, unitPrice, deliveryPrice) {
   checkoutTotal.innerHTML = (totalPrice + deliveryPrice).toFixed(2);
 
   if (currAmount === 1 && productAmountTxt.innerHTML !== "unit") {
-      productAmountTxt.innerHTML = "unit";
+    productAmountTxt.innerHTML = "unit";
   }
   if (currAmount > 1 && productAmountTxt.innerHTML !== "units") {
-      productAmountTxt.innerHTML = "units"
+    productAmountTxt.innerHTML = "units";
   }
-
 }
 
 // Hello Jim.
@@ -89,4 +88,4 @@ function pricesCalculator(currAmount, unitPrice, deliveryPrice) {
 
 // A lot of great stuff throughout the site. The minimal animations added to hover effects is neat and suits the site. Keep it up!
 
-// Jan
+// https://jsolutions.no/wp-json/wc/store/products

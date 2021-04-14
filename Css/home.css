@@ -95,6 +95,7 @@
   object-fit: cover;
   object-position: center;
   margin-bottom: 1.5rem;
+  height: 250px;
 }
 /* //#196dbb */
 .product-cards-wrapper a {

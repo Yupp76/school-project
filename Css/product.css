@@ -147,6 +147,15 @@
   row-gap: 1.5rem;
 }
 
+.products-wrapper .card-image-cover {
+  width: 100%;
+  min-height: 100px;
+  max-height: 250px;
+  height: 250px;
+  background-color: darkgray;
+  object-fit: cover;
+}
+
 .products-wrapper a {
   color: black;
   margin-right: 10px;
